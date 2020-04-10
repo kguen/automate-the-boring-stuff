@@ -39,7 +39,7 @@ def createGap(prefix, index):
         if mo is None:
             continue
         currentIdx = int(mo.group(1))
-        # gaps between current index and previous index
+        # every file with index >= input index has to be renamed
         if currentIdx >= index:
             # change index and add leading zeros
             currentIdx = str(currentIdx + 1).zfill(3)
