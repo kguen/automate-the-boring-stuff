@@ -13,5 +13,7 @@ def regexSearch(regexStr):
         for line in txtFile.readlines():
             if regex.search(line) != None: 
                 print(line)
+        # Close txt file        
+        txtFile.close()
 
 regexSearch(r'lorem')
