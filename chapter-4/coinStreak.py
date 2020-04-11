@@ -17,4 +17,4 @@ for experimentNumber in range(10000):
             numberOfStreaks += 1
             break
 
-print('Chance of streak: %s%%' % (numberOfStreaks / 100))
+print('Chance of streak: %s%%' % (numberOfStreaks / 10000))
